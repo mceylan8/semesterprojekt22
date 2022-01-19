@@ -15,7 +15,7 @@
             <p>Unter "My Tickets" können Sie, falls Sie während Ihrem Aufenthalt auf technische Probleme stoßen, diese einem Service-Techniker des 
                 Hotels bekannt geben. Wir bitten Sie hierbei auch ein Bild, welches das Problem veranschaulicht, hochzuladen. 
             </p>
-            <p>Weiters können Sie den Bearbeitungsstatus Ihrer Tickets einsehen.</p>
+            <p>Weiters können Sie den Bearbeitungsstatus Ihrer Tickets einsehen. TESTETESTSET</p>
 
 
         </div>
