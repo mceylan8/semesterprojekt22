@@ -20,21 +20,7 @@
          <i class="fas fa-bars"></i>
          </label>
          <ul>
-
-            <?php
-               if(isset($_SESSION['users']))
-               {
-                  
-            ?>
-                  <div class="logo">
-                     <?php
-
-                     ?>
-                  </div> 
-            <?php
-               }
-            ?>
-            <li><a class="active" href="/index.php">Home</a></li>
+            <li><a class="active" href="/semesterprojekt22/index.php">Home</a></li>
             <?php
                if(!isset($_SESSION['users']))
                {

@@ -8,19 +8,26 @@
 </head>
 
 <body>
-    <?php
-        $sql = "SELECT * from users;";
-        $results = mysqli_query($con,$sql);
-        $resultCheck = mysqli_num_rows($results);
-
-        if($resultCheck > 0)
-        {
-            while($row = mysqli_fetch_assoc($results))
+    <table>
+        <tr>
+            <th>Anrede</th>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Rolle</th>
+            <th>Status</th>
+        </tr>
+        <?php
+            require("/xampp/htdocs/semesterprojekt22/config/dbaccess.php");
+            $stmt = $mysql->prepare("SELECT anrede, usersVorname, usersNachname, usersEmail, usersRole, usersActive FROM users");
+            $stmt->execute();
+            while($row = $stmt->fetch())
             {
-                echo $row['anrede'] . $row['usersVorname'] . $row['usersNachname'] . $row['usersEmail'] . $row['usersUID'] . $row['usersRole'] . $row['usersActive'] . "<br>";
+              ?>
+              <td><?php echo $row["vorname"] ?></td>  
+              <?php
             }
-        }
-    ?>
-
-
+        ?>
+    </table>
 </body>
